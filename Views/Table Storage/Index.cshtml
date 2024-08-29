@@ -1,0 +1,35 @@
+﻿<!-- Views/Table/Index.cshtml -->
+@{
+    ViewData["Title"] = "Manage Table Storage";
+}
+
+<h2>Manage Table Storage</h2>
+<p>View and manage customer profiles.</p>
+
+<a href="@Url.Action("Create", "Table")" class="btn btn-primary">Add New Profile</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var profile in Model)
+        {
+            <tr>
+                <td>@profile.CustomerID</td>
+                <td>@profile.Name</td>
+                <td>@profile.Email</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Table", new { id = profile.CustomerID })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", "Table", new { id = profile.CustomerID })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

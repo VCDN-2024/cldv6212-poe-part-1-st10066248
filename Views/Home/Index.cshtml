@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to ABC Retail Web App</h1>
+    <p>Select an option below to manage data:</p>
+
+    <ul class="list-group">
+        <li class="list-group-item"><a href="@Url.Action("Index", "Blob")">Manage Blob Storage (Images/Multimedia)</a></li>
+        <li class="list-group-item"><a href="@Url.Action("Index", "Table")">Manage Table Storage (Customer Profiles)</a></li>
+        <li class="list-group-item"><a href="@Url.Action("Index", "Queue")">View Queue Storage (Order Processing)</a></li>
+        <li class="list-group-item"><a href="@Url.Action("Index", "FileShare")">Manage File Share Storage (Contracts/Logs)</a></li>
+    </ul>
+</div>

@@ -1,0 +1,27 @@
+﻿<!-- Views/FileShare/Index.cshtml -->
+@{
+    ViewData["Title"] = "Manage File Share Storage";
+}
+
+<h2>Manage File Share Storage</h2>
+<p>Upload and manage contracts and log files.</p>
+
+<form asp-action="Upload" asp-controller="FileShare" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label for="file">Select file to upload:</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<h3>Existing Files</h3>
+<ul>
+    @foreach (var file in Model)
+    {
+        <li>
+            <a href="@Url.Action("Download", "FileShare", new { fileName = file })">@file</a>
+            <a href="@Url.Action("Delete", "FileShare", new { fileName = file })" class="btn btn-danger btn-sm">Delete</a>
+        </li>
+    }
+</ul>
+

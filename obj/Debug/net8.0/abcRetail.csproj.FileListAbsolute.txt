@@ -1,0 +1,8 @@
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.csproj.AssemblyReference.cache
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.AssemblyInfoInputs.cache
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.AssemblyInfo.cs
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.csproj.CoreCompileInputs.cache
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.RazorAssemblyInfo.cache
+C:\Users\ameer\source\repos\abcRetail\abcRetail\obj\Debug\net8.0\abcRetail.RazorAssemblyInfo.cs

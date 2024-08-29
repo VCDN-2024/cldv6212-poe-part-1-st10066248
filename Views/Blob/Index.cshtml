@@ -1,0 +1,27 @@
+﻿<!-- Views/Blob/Index.cshtml -->
+@{
+    ViewData["Title"] = "Manage Blob Storage";
+}
+
+<h2>Manage Blob Storage</h2>
+<p>Upload new images or multimedia files, or view existing ones.</p>
+
+<form asp-action="Upload" asp-controller="Blob" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label for="file">Select file to upload:</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<h3>Existing Files</h3>
+<ul>
+    @foreach (var file in Model)
+    {
+        <li>
+            <a href="@Url.Action("Download", "Blob", new { fileName = file })">@file</a>
+            <a href="@Url.Action("Delete", "Blob", new { fileName = file })" class="btn btn-danger btn-sm">Delete</a>
+        </li>
+    }
+</ul>
+
